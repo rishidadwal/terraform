@@ -3,7 +3,7 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
   vpc_security_group_ids = ["sg-09c918b8c00442b89"]
   iam_instance_profile  = "fulladmin"
-  key_name              = "devops"
+  key_name              = "RishiNVerginia"
 
   tags = {
     Name = "sonarqube"
