@@ -6,7 +6,14 @@ resource "aws_instance" "web" {
   iam_instance_profile  = "fulladmin"
   key_name              = "RishiNVerginia"
 
+
   tags = {
     Name = "Server ${count.index+1}"
 }
+
+  lifecycle {
+    create_before_destroy = true
+  }
+
+
 }
