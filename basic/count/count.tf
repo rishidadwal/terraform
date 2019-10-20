@@ -7,5 +7,6 @@ resource "aws_instance" "web" {
   key_name              = "RishiNVerginia"
 
   tags = {
-    Name = "Server ${count.index}"
+    Name = "Server ${count.index+1}"
+}
 }
