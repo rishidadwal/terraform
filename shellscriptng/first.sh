@@ -1,5 +1,3 @@
-for((i=0;i<n;i++)); do
-    echo "$i"
-done
-
-
+if [ "$file1" -ef "$file2" ]; then
+    echo files are equal
+fi
