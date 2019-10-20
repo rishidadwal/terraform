@@ -13,4 +13,5 @@ resource "aws_instance" "web" {
 resource "local_file" "sample" {
     content     = "www.goole.com"
     filename = "/tmp/rishi"
+    depends_on = ["aws_instance.web"]
 }
