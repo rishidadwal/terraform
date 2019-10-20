@@ -8,7 +8,7 @@ resource "aws_instance" "web" {
 
 
   tags = {
-    Name = "Server ${count.index+1}"
+    Name = "node ${count.index+1}"
 }
 
   lifecycle {
