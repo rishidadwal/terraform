@@ -6,6 +6,4 @@ for_each = {
  provisioner "local-exec" {
     command = "echo ${each.key}"
  }
-
-
 }
