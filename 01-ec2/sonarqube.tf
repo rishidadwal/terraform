@@ -9,3 +9,8 @@ resource "aws_instance" "web" {
     Name = "sonarqube"
   }
 }
+
+resource "local_file" "sample" {
+    content     = "www.goole.com"
+    filename = "/tmp/rishi"
+}
