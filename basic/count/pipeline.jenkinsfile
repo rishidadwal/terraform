@@ -6,6 +6,10 @@ pipeline{
         stage("A"){
             steps{
                 echo "========executing A========"
-                sh "echo "hello world"
+                "echo "hello world"
+            
             }
+        }
+    }
+}
             
